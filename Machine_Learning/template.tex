@@ -1,0 +1,77 @@
+\documentclass[11pt, a4paper]{article}
+
+% --- Packages ---
+\usepackage[utf8]{inputenc}  % For UTF-8 encoding
+\usepackage[T1]{fontenc}     % For correct hyphenation and T1 encoding
+\usepackage{geometry}        % For setting page dimensions
+\usepackage{amsmath}         % For advanced math typesetting
+\usepackage{amsfonts}        % For math fonts
+\usepackage{amssymb}         % For mathematical symbols
+\usepackage{graphicx}        % For including images
+\usepackage{enumitem}        % For customizing lists
+\usepackage{hyperref}        % For hyperlinks
+\usepackage{fancyhdr}        % For fancy headers and footers
+
+% --- Page layout settings ---
+\geometry{
+	a4paper,
+	left=25mm,
+	right=25mm,
+	top=30mm,
+	bottom=30mm,
+	headheight=15pt
+}
+
+% --- Header and Footer ---
+\pagestyle{fancy}
+\fancyhf{}  % Clear header and footer
+\rhead{Machine Learning}  % Course name in the header
+\rfoot{Page \thepage}
+
+% Apply the header and footer style to the first page as well
+\fancypagestyle{plain}{
+	\fancyhf{}  % Clear all header and footer fields
+	\rhead{Machine Learning}
+	\rfoot{Page \thepage}
+}
+
+\begin{document}
+	
+	% Since the title and author are not needed on the page, we skip \maketitle
+	% \title{Machine Learning}  % No need to define the title if it's not used
+	% \author{Brusk Abdalla}  % No need to define the author if it's not used
+	% \maketitle is omitted
+	
+	\section{Introduction}
+	From ancient times up to 2005, humans have created 130 exabytes of data. \\
+	
+	A definition of Machine Learning would be: The field of study that gives computers the ability to learn without being explicitly programmed. - Arthur Samuel. \\
+	
+	Types of machine learning:
+	\begin{itemize}
+		\item Supervised learning (Regression \& Classification)
+		\item Unsupervised learning (Clustering \& Association)
+		\item Reinforced learning
+	\end{itemize} 
+
+Reinforced learning is feedback based, the agent gets rewards for every right action and get penalized for every wrong action.  \textbf{The agent interacts with its environment.} \\
+
+\section{Machine learning Life cycle}
+
+	\begin{itemize}
+		\item Data pre-processing \\
+		- Import the data \\
+		- Clean the data \\
+		- Split the data into test and training parts
+
+		\item Modeling \\
+		- Build the model \\
+		- Train the model \\
+		- Make predictions
+
+		\item Evaluation \\
+		- Calculate performance metrics \\
+		- Make a verdict
+	\end{itemize}
+
+\end{document}
